@@ -1,0 +1,24 @@
+html
+    head 
+        title TV-SYNOPSIS 
+        link(rel="stylesheet" href="/styles.css")
+    
+    body
+        h1(class="showdata")= showdata.title 
+        h2(class="developed") Developed By: 
+        ul(class="list") 
+            for developedData in showdata.developedBy
+                li= developedData
+        h2(class="starring") Starring 
+        ul(class="list") 
+            for starringData in showdata.starring
+                li= starringData 
+        h2 Seasons 
+        ul(class="list") 
+                for season in showdata.seasons
+                    li
+                        a(href=`/season/${season.number}`)=`Season ${season.number}`
+        
+
+
+            
