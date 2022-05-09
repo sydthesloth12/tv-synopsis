@@ -1,0 +1,21 @@
+html
+    head 
+        title TV-SYNOPSIS 
+        link(rel="stylesheet" href="/css/styles.css")
+    
+    body
+        h1 Kim's Convenience
+        h2= `Season ${season.number}`
+        table(class= "table") 
+            tr 
+                th(class="number") No. 
+                th(class="title") Title 
+                th(class="director") Director 
+            for episode in season.episodes  
+                tr 
+                    td= episode.number
+                    td= episode.title 
+                    td= episode.director
+                    td= episode.synopsis
+                
+
