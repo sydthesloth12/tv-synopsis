@@ -6,3 +6,27 @@
 .developed {
     color: lightseagreen;
 }
+
+.list { 
+    color: lightseagreen;
+}
+
+.starring { 
+    color: lightseagreen;
+}
+
+.seasons {
+    color: lightseagreen;
+}
+
+.table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 70px;
+}
+
+

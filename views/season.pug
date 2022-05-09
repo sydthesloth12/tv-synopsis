@@ -6,11 +6,11 @@ html
     body
         h1 Kim's Convenience
         h2= `Season ${season.number}`
-        table 
+        table(class= "table") 
             tr 
-                th No. 
-                th Title 
-                th Director 
+                th(class="number") No. 
+                th(class="title") Title 
+                th(class="director") Director 
             for episode in season.episodes  
                 tr 
                     td= episode.number
